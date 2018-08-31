@@ -21,3 +21,7 @@ Route::get('/', function () {
 
     return view('welcome', compact('todo_list'));
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
