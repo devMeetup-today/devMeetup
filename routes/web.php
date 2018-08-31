@@ -12,5 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $todo_list = [
+        'set up user registration and login system',
+        'create views dynamically',
+        'choose a template + color scheme'
+    ];
+
+    return view('welcome', compact('todo_list'));
 });

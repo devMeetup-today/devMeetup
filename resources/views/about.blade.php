@@ -69,7 +69,7 @@
     @if (Route::has('login'))
         <div class="top-right links">
             @auth
-                <a href="{{ url('/') }}">Home</a>
+                <a href="{{ url('/home') }}">Home</a>
             @else
                 <a href="{{ route('login') }}">Login</a>
                 <a href="{{ route('register') }}">Register</a>
@@ -86,16 +86,6 @@
             <a href="{{url('areas')}}">Find a meetup in your area</a>
             <a href="{{url('login')}}">Log In</a>
             <a href="{{url('create-account')}}">Create an Account</a>
-        </div>
-        <div>
-            <h3>TO DO:</h3>
-            <ul>
-         @foreach ($todo_list as $item) :
-            <li>
-                {{$item }}
-            </li>
-             @endforeach;
-            </ul>
         </div>
     </div>
 </div>
