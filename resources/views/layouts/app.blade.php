@@ -19,6 +19,7 @@
 
 </head>
 <body>
+    <button id="theme-switch" style="width:38px; height:38px; position:absolute; bottom:0;">✨</button>
      @include('components.nav')
     <main class="content-container">
         @yield('content')

@@ -1,14 +1,14 @@
 body {
     font-family: Roboto,Arial,Helvetica,sans-serif;
-    background-color: var(--color-dark-blue, $base-color-dark-blue);
-    color: var(--color-light-grey, $base-color-light-grey);
+    background-color: var(--bodyBackgroundColor, $base-color-dark-blue);
+    color: var(--bodyTextColor, $base-color-light-grey);
 }
 
 a {
-    color: var(--base-color-mid-mono-grey, $base-color-mid-mono-grey);
+    color: var(--linkTextColor, $base-color-mid-mono-grey);
     text-decoration: none;
     &:hover{
-        color: var(--base-color-red-hover, $base-color-red-hover);
+        color: var(--linkTextHoverColor, $base-color-red-hover);
     }
 }
 

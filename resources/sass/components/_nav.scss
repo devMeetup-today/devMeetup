@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: $base-color-darker-blue;
+    background-color: var(--navBackgroundColor, $base-color-darker-blue);
     font-size: 1.2em;
 
     &__list{
@@ -21,9 +21,9 @@
     }
 
     a{
-        color: var(--base-color-lt-mid-grey, $base-color-lt-mid-grey);
+        color: var(--navLinkColor, $base-color-lt-mid-grey);
         &:hover{
-            color: var(--base-color-red-hover, $base-color-red-hover);
+            color: var(--navLinkHoverColor, $base-color-red-hover);
         }
     }
 }
