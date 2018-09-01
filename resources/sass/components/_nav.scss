@@ -1,0 +1,29 @@
+.nav{
+    height: 3.6em;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $base-color-darker-blue;
+    font-size: 1.2em;
+
+    &__list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    &__list-item{
+        padding: 0 10px;
+        margin: 0 5px;
+    }
+
+    a{
+        color: var(--base-color-lt-mid-grey, $base-color-lt-mid-grey);
+        &:hover{
+            color: var(--base-color-red-hover, $base-color-red-hover);
+        }
+    }
+}

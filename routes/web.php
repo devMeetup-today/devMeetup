@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MeetupController@indexAction');
+
+Route::get('/meetups', 'MeetupController@showMeetupListAction');
+
+Route::get('/meetup/{meetup}', 'MeetupController@showMeetupAction');
+
+Auth::routes();
+
