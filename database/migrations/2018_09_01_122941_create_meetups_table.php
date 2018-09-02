@@ -16,10 +16,9 @@ class CreateMeetupsTable extends Migration
         Schema::create('meetups', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->integer('user_id');
-            $table->text('description');
-            $table->dateTime('date_of_meetup');
-            $table->integer('area_id');
+            $table->datetime('date_of_meetup')->default(DB::raw('CURRENT_TIMESTAMP'));
+            $table->text('details');
+            $table->integer('user_id')->default(null);
             $table->timestamps();
         });
     }

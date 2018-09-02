@@ -24,5 +24,7 @@
     <main class="content-container">
         @yield('content')
     </main>
+
+        @yield('footer')
 </body>
 </html>

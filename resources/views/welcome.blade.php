@@ -5,13 +5,18 @@
 
         <div>
             <h3>TO DO:</h3>
+            <p>For a complete list of what needs doing please check the issues list on Github.</p>
+            <p>For now, you can check out the following things:</p>
             <ul>
-                 @foreach ($todo_list as $item)
-                    <li>
-                        {{$item }}
-                    </li>
-                 @endforeach
+                <li><a href="{{url('meetups')}}">A list of all registered meetups</a></li>
+                <li><a href="{{url('login')}}">Check out the Login page</a></li>
+                <li><a href="{{url('register')}}">Check out the registering page</a></li>
             </ul>
         </div>
     </div>
+@endsection
+@section('footer')
+    <footer>
+        <p>Footer content goes here</p>
+    </footer>
 @endsection

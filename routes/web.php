@@ -11,17 +11,11 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/', 'MeetupController@indexAction');
 
-    $todo_list = [
-        'set up user registration and login system',
-        'create views dynamically',
-        'choose a template + color scheme'
-    ];
+Route::get('/meetups', 'MeetupController@showMeetupListAction');
 
-    return view('welcome', compact('todo_list'));
-});
+Route::get('/meetup/{meetup}', 'MeetupController@showMeetupAction');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
