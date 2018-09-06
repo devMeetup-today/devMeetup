@@ -1,0 +1,11 @@
+:root[theme='ALICE']{
+    --bodyBackgroundColor: #{$alice-pink};//#fff1f4;//#f49390;
+    --bodyTextColor: #0f0e20;
+
+    --linkTextColor: #{$base-color-dark-blue};
+    --linkTextHoverColor: #{$base-color-darker-blue};
+
+    --navBackgroundColor: #{$alice-dark-pink};//#742f43;
+    --navLinkColor:  #{$alice-light-pink};
+    --navLinkHoverColor: #{$base-color-darker-blue};
+}

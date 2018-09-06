@@ -1,0 +1,11 @@
+:root, :root[theme='DEVRANT_DARK'] {
+    --bodyBackgroundColor: #{$base-color-dark-blue};
+    --bodyTextColor: #{$base-color-light-grey};
+
+    --linkTextColor: #{$base-color-mid-mono-grey};
+    --linkTextHoverColor: #{$base-color-red-hover};
+
+    --navBackgroundColor: #{$base-color-darker-blue};
+    --navLinkColor: #{$base-color-lt-mid-grey};
+    --navLinkHoverColor: #{$base-color-red-hover};
+}
