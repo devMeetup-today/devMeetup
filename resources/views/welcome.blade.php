@@ -17,6 +17,6 @@
 @endsection
 @section('footer')
     <footer>
-        <p>Footer content goes here</p>
+        <p>Possible footer content goes here</p>
     </footer>
 @endsection
