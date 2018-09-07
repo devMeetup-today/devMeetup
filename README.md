@@ -9,6 +9,7 @@ So here it is, the project that will make it easier to keep up to date with devR
 - Possibility to add whatever contact method you want and per user a possibility to make that contact detail private/public. Other users can by a click send a request to view one or more contact details. The user can then either accept or decline it.
 - Location finding by using OSM and maybe a possibility to add public transit APIs to calculate it.
 - When making a new meetup the creator can say in which country it will be. Other people can subscribe to a country to get notifications.  
-_Example: Im makimg a new meetup for the Netherlands, if there is a few belgians, french people and germans willing to join the location will average to some place in Limburg probably._
+_Example: Im makimg a new meetup for the Netherlands, if there are a few Belgians, French people and Germans willing to join the location will average to some place in Limburg probably._
 - Sharing nice places, some meetups might be in a park and if that was easily accessible and has enough park benches it might become a recommended place which weighs in the location averager.
+- adding a map-based API to set and display the location of the meetup. For privacy (and, by now, also financial) reasons, not using Google would be preferred here.
 
