@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'MeetupController@index');
 
 Route::get('/meetups', 'MeetupController@showMeetupListAction');
 
