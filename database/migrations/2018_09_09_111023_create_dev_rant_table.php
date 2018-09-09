@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCountriesTable extends Migration
+class CreateDevRantTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateCountriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('countries', function (Blueprint $table) {
+        Schema::create('devRant_community', function (Blueprint $table) {
             $table->increments('id');
-            $table->foreign('id')->references('id')->on('meetups');
-            $table->string('country_name');
+            $table->foreign('id')->references('id')->on('users');
+            $table->integer('devRant_userID');
+            $table->string('user_name');
         });
     }
 
@@ -27,6 +28,6 @@ class CreateCountriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('devRant_community');
     }
 }
