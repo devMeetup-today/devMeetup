@@ -13,13 +13,13 @@
 
 Route::get('/', 'MeetupController@index');
 
-Route::get('/meetups', 'MeetupController@showMeetupListAction');
-
-Route::get('/meetups/{meetup}', 'MeetupController@showMeetupAction');
+Route::get('/about', 'HomeController@showAboutPageAction');
 
 Route::get('/meetup/create', 'MeetupController@create');
 
-Route::post('/meetup/create', 'MeetupController@store');
+Route::get('/meetups', 'MeetupController@showMeetupListAction');
+
+Route::get('/meetups/{meetup}', 'MeetupController@showMeetupAction');
 
 Auth::routes();
 
