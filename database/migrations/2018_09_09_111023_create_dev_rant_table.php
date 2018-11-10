@@ -13,10 +13,10 @@ class CreateDevRantTable extends Migration
      */
     public function up()
     {
-        Schema::create('devRant_community', function (Blueprint $table) {
+        Schema::create('devrant_community', function (Blueprint $table) {
             $table->increments('id');
             $table->foreign('id')->references('id')->on('users');
-            $table->integer('devRant_userID');
+            $table->integer('devrant_userid');
             $table->string('user_name');
         });
     }
@@ -28,6 +28,6 @@ class CreateDevRantTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('devRant_community');
+        Schema::dropIfExists('devrant_community');
     }
 }
