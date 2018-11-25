@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace devMeetup\Http\Controllers;
 
-use App\Meetup;
+use devMeetup\Meetup;
 use Illuminate\Http\Request;
 
 class MeetupController extends Controller
