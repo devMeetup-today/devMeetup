@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace devMeetup;
 
 use Illuminate\Database\Eloquent\Model;
 
