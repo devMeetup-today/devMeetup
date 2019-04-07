@@ -85,7 +85,7 @@
             <a href="{{url('about')}}">About</a>
             <a href="{{url('areas')}}">Find a meetup in your area</a>
             <a href="{{url('login')}}">Log In</a>
-            <a href="{{url('create-account')}}">Create an Account</a>
+            <a href="{{url('register')}}">Create an Account</a>
         </div>
         <div>
             <h3>You are looking at the following meetup: {{$meetup->title}}</h3>

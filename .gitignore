@@ -17,3 +17,4 @@ public/css/
 public/js/
 public/mix-manifest.json
 laradock/
+composer.lock
